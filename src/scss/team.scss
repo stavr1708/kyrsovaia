@@ -1,0 +1,82 @@
+.team {
+  background-color: $_white;
+  padding: 114px 0;
+}
+.team-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  //   margin: 0px -15px 0 -15px;
+}
+.team-card {
+  width: 270px;
+  //   margin: 0 15px;
+}
+.team-card__image__container {
+  width: 270px;
+  height: 270px;
+  margin: auto auto 30px;
+}
+.team-card__person {
+  margin-bottom: 20px;
+  h4 {
+    color: $_black2;
+    font-size: $_h4_fz;
+    font-family: $_ff_raleway;
+    font-weight: $_fw_700;
+  }
+  span {
+    color: $_coral;
+    font-size: $_h5_fz;
+    font-family: $_ff_raleway;
+    font-weight: $_fw_400;
+    text-transform: uppercase;
+  }
+}
+.team-card__desc {
+  font-family: $_ff_raleway;
+  font-size: $_h5_fz;
+  font-weight: $_fw_400;
+  color: $_grey_3;
+  margin-bottom: 40px;
+}
+.team-card__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 127px;
+}
+.fa-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $_grey;
+  width: 39px;
+  height: 39px;
+}
+.fa-facebook-f {
+  font-size: $_h4_fz;
+  color: $_grey;
+  transition: 0.7s;
+  &:hover {
+    color: $_red;
+    background-color: $_grey_3;
+  }
+}
+.fa-twitter {
+  font-size: $_h4_fz;
+  color: $_grey;
+  transition: 0.7s;
+  &:hover {
+    color: $_red;
+    background-color: $_grey_3;
+  }
+}
+.fa-invision {
+  font-size: $_h4_fz;
+  color: $_grey;
+  transition: 0.7s;
+  &:hover {
+    color: $_red;
+    background-color: $_grey_3;
+  }
+}

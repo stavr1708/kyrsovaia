@@ -2,6 +2,7 @@
 @import "./mixins";
 @import "./cdn";
 @import "./features.scss";
+@import "./team.scss";
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-html{
+html {
   font-family: "Raleway", sans-serif;
 }
 .container {
