@@ -6,11 +6,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  //   margin: 0px -15px 0 -15px;
+    // margin: 0px -15px 0 -15px;
 }
 .team-card {
   width: 270px;
-  //   margin: 0 15px;
+    // margin: 0 15px;
 }
 .team-card__image__container {
   width: 270px;
@@ -80,3 +80,14 @@
     background-color: $_grey_3;
   }
 }
+// @media (max-width:1024px){
+//   .container{
+//     width: 984px;
+//   }
+//   .team-card{
+//     width: 227px;
+//   }
+//  .team-card__person span{
+//   font-size: $_h6_fz;
+//  }
+// }
