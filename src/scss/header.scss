@@ -1,6 +1,7 @@
 .header{
   height: 100vh;
   padding-top: 38px;
+  // padding-bottom: 100px;
   background-image: url("../img/header_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,8 +22,19 @@
 .header-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   margin-bottom: 130px;
+  position: relative;
+  &::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: $_grey_2;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 .header-logo {
 }
@@ -34,12 +46,36 @@
   justify-content: space-between;
 }
 .navigation-list__item {
+  text-align: center;
+  width: 20%;
 a{
   font-family: $_ff_raleway;
 font-size: 0.8125rem;
 font-weight: $_fw_700;
 color: $_white;
 text-transform: uppercase;
+padding: 0 0 41px 0;
+position: relative;
+display: block;
+&::after{
+  content: '';
+  height: 3px;
+  background-color: $_grey_2;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.3s;
+}
+&:hover::after{
+  width: 100%;
+}
+&:active{
+  color: $_red;
+}
+&:active::after{
+  background-color: $_red;
+}
 }
 }
 .header-title {
