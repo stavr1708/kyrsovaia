@@ -99,21 +99,38 @@ margin-bottom: 80px;
   text-align: center;
 }
 .header-button__link {
-  display: inline-block;
-  background: $_coral;
-  color: rgb(255, 255, 255);
+display: inline-block;
+background: $_coral;
+color: rgb(255, 255, 255);
 font-family: $_ff_raleway;
 font-size: $_h4_fz;
 font-weight: $_fw_900;
 line-height: 80px;
 text-transform: uppercase;
 width: 370px;
+animation: pulse 1s 10 alternate;
 transition: 0.7s;
 &:hover{
   background: $_red;
+  animation: none;
 }
 &:active{
   background: $_coral;
   box-shadow: 4px 4px 30px 0px $_coral;
 }
+}
+
+@keyframes pulse {
+  0% {
+    // width: 370px;
+    color:rgb(230, 226, 15) ;
+  }
+
+  100% {
+   font-size: $_h3_fz;
+   color: rgb(34, 231, 221);
+   transform: scale(1.2);
+  //  width: 410px;
+  //  line-height: 88px;
+  }
 }
