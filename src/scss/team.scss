@@ -45,7 +45,8 @@
   justify-content: space-between;
   width: 127px;
 }
-.fa-brands {
+// .fa-brands
+.team-card__icons-wrap{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +54,8 @@
   width: 39px;
   height: 39px;
 }
-.fa-facebook-f {
+// .fa-facebook-f 
+.team-card__icons-wrap__link{
   font-size: $_h4_fz;
   color: $_grey;
   transition: 0.7s;
@@ -62,24 +64,24 @@
     background-color: $_grey_3;
   }
 }
-.fa-twitter {
-  font-size: $_h4_fz;
-  color: $_grey;
-  transition: 0.7s;
-  &:hover {
-    color: $_red;
-    background-color: $_grey_3;
-  }
-}
-.fa-invision {
-  font-size: $_h4_fz;
-  color: $_grey;
-  transition: 0.7s;
-  &:hover {
-    color: $_red;
-    background-color: $_grey_3;
-  }
-}
+// .fa-twitter {
+//   font-size: $_h4_fz;
+//   color: $_grey;
+//   transition: 0.7s;
+//   &:hover {
+//     color: $_red;
+//     background-color: $_grey_3;
+//   }
+// }
+// .fa-invision {
+//   font-size: $_h4_fz;
+//   color: $_grey;
+//   transition: 0.7s;
+//   &:hover {
+//     color: $_red;
+//     background-color: $_grey_3;
+//   }
+// }
 // @media (max-width:1024px){
 //   .container{
 //     width: 984px;
