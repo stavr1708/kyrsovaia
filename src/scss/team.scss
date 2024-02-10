@@ -6,11 +6,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  // margin: 0px -15px 0 -15px;
+  margin: 0px -10px 0 -10px;
 }
 .team-card {
   width: 270px;
-  // margin: 0 15px;
+  margin: 0 10px;
 }
 .team-card__image__container {
   width: 270px;
@@ -45,8 +45,7 @@
   justify-content: space-between;
   width: 127px;
 }
-// .fa-brands
-.team-card__icons-wrap{
+.fa-brands {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,34 +53,33 @@
   width: 39px;
   height: 39px;
 }
-// .fa-facebook-f 
-.team-card__icons-wrap__link{
+.fa-facebook-f {
   font-size: $_h4_fz;
   color: $_grey;
-  transition: 0.7s;
+  transition: 1s;
   &:hover {
-    color: $_red;
-    background-color: $_grey_3;
+    color: $_white;
+    background-color: blue;
   }
 }
-// .fa-twitter {
-//   font-size: $_h4_fz;
-//   color: $_grey;
-//   transition: 0.7s;
-//   &:hover {
-//     color: $_red;
-//     background-color: $_grey_3;
-//   }
-// }
-// .fa-invision {
-//   font-size: $_h4_fz;
-//   color: $_grey;
-//   transition: 0.7s;
-//   &:hover {
-//     color: $_red;
-//     background-color: $_grey_3;
-//   }
-// }
+.fa-twitter {
+  font-size: $_h4_fz;
+  color: $_grey;
+  transition: 1s;
+  &:hover {
+    color: rgb(29, 161, 242);
+    background-color: rgb(236, 229, 229);
+  }
+}
+.fa-invision {
+  font-size: $_h4_fz;
+  color: $_grey;
+  transition: 1s;
+  &:hover {
+    color: $_red;
+    background-color: rgb(236, 229, 229);
+  }
+}
 // @media (max-width:1024px){
 //   .container{
 //     width: 984px;

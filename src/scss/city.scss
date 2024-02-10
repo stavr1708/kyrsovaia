@@ -1,0 +1,21 @@
+.city {
+}
+.city-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.city-img {
+  width: 25%;
+  position: relative;
+  border: 1px solid white;
+}
+.city-img__item {
+}
+.city-img img {
+  width: 100%;
+  height: 100%;
+}
+// .city-info {
+//   position: absolute;
+//   width: 25%;
+// }

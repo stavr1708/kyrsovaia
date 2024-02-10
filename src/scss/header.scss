@@ -1,4 +1,4 @@
-.header{
+.header {
   height: 100vh;
   padding-top: 38px;
   // padding-bottom: 100px;
@@ -7,16 +7,16 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  
+
   // Mask header
-  &::after{
+  &::after {
     content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: $_violet;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $_violet;
   }
 }
 .header-wrap {
@@ -25,8 +25,8 @@
   // align-items: center;
   margin-bottom: 130px;
   position: relative;
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     height: 1px;
     width: 100%;
     background-color: $_grey_2;
@@ -48,89 +48,89 @@
 .navigation-list__item {
   text-align: center;
   width: 20%;
-a{
-  font-family: $_ff_raleway;
-font-size: 0.8125rem;
-font-weight: $_fw_700;
-color: $_white;
-text-transform: uppercase;
-padding: 0 0 41px 0;
-position: relative;
-display: block;
-&::after{
-  content: '';
-  height: 3px;
-  background-color: $_grey_2;
-  width: 0;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  transition: 0.3s;
-}
-&:hover::after{
-  width: 100%;
-}
-&:active{
-  color: $_red;
-}
-&:active::after{
-  background-color: $_red;
-}
-}
+  a {
+    font-family: $_ff_raleway;
+    font-size: 0.8125rem;
+    font-weight: $_fw_700;
+    color: $_white;
+    text-transform: uppercase;
+    padding: 0 0 41px 0;
+    position: relative;
+    display: block;
+    &::after {
+      content: "";
+      height: 3px;
+      background-color: $_grey_2;
+      width: 0;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      transition: 0.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+    &:active {
+      color: $_red;
+    }
+    &:active::after {
+      background-color: $_red;
+    }
+  }
 }
 .header-title {
   font-family: $_ff_raleway;
-font-size: $_h1_fz;
-font-weight: $_fw_900;
-color: $_white;
-text-align: center;
-margin-bottom: 30px;
-text-transform: uppercase;
+  font-size: $_h1_fz;
+  font-weight: $_fw_900;
+  color: $_white;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 .header-desc {
   font-family: $_ff_raleway;
-font-size: $_h4_fz;
-font-weight: $_fw_400;
-color: $_white;
-text-align: center;
-margin-bottom: 80px;
+  font-size: $_h4_fz;
+  font-weight: $_fw_400;
+  color: $_white;
+  text-align: center;
+  margin-bottom: 80px;
 }
 .header-button {
   text-align: center;
 }
 .header-button__link {
-display: inline-block;
-background: $_coral;
-color: rgb(255, 255, 255);
-font-family: $_ff_raleway;
-font-size: $_h4_fz;
-font-weight: $_fw_900;
-line-height: 80px;
-text-transform: uppercase;
-width: 370px;
-animation: pulse 1s 10 alternate;
-transition: 0.7s;
-&:hover{
-  background: $_red;
-  animation: none;
-}
-&:active{
+  display: inline-block;
   background: $_coral;
-  box-shadow: 4px 4px 30px 0px $_coral;
-}
+  color: rgb(255, 255, 255);
+  font-family: $_ff_raleway;
+  font-size: $_h4_fz;
+  font-weight: $_fw_900;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: 370px;
+  animation: pulse 1s 10 alternate;
+  transition: 0.7s;
+  &:hover {
+    background: $_red;
+    animation: none;
+  }
+  &:active {
+    background: $_coral;
+    box-shadow: 4px 4px 30px 0px $_coral;
+  }
 }
 
 @keyframes pulse {
   0% {
     // width: 370px;
-    color:rgb(230, 226, 15) ;
+    color: rgb(230, 226, 15);
   }
 
   100% {
-   font-size: $_h3_fz;
-   color: rgb(34, 231, 221);
-   transform: scale(1.2);
-  //  width: 410px;
-  //  line-height: 88px;
+    font-size: $_h3_fz;
+    color: rgb(34, 231, 221);
+    transform: scale(1.2);
+    //  width: 410px;
+    //  line-height: 88px;
   }
 }
