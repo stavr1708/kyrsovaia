@@ -5,40 +5,41 @@
 .container {
 }
 .download-title {
-  font-family:$_ff_raleway;
-font-size: $_h3_fz;
-font-weight: $_fw_500;
-text-align: center;
-color: $_black;
-margin-bottom: 30px;
+  font-family: $_ff_raleway;
+  font-size: $_h3_fz;
+  font-weight: $_fw_500;
+  text-align: center;
+  color: $_black;
+  margin-bottom: 30px;
 }
 .download-desc {
   font-family: $_ff_raleway;
-font-size: $_h5_fz;
-font-weight: $_fw_700;
-text-align: center;
-color: $_black;
-margin-bottom: 48px;
+  font-size: $_h5_fz;
+  font-weight: $_fw_700;
+  text-align: center;
+  color: $_black;
+  margin-bottom: 48px;
+  text-transform: uppercase;
 }
 .download-button {
   text-align: center;
 }
 .download-button__link {
   display: inline-block;
-background: $_coral;
-color: rgb(255, 255, 255);
-font-family: $_ff_raleway;
-font-size: $_h4_fz;
-font-weight: $_fw_900;
-line-height: 80px;
-text-transform: uppercase;
-width: 370px;
-transition: 0.7s;
-&:hover{
-  background: $_red;
-}
-&:active{
   background: $_coral;
-  box-shadow: 4px 4px 30px 0px $_coral;
-}
+  color: rgb(255, 255, 255);
+  font-family: $_ff_raleway;
+  font-size: $_h4_fz;
+  font-weight: $_fw_900;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: 370px;
+  transition: 0.7s;
+  &:hover {
+    background: $_red;
+  }
+  &:active {
+    background: $_coral;
+    box-shadow: 4px 4px 30px 0px $_coral;
+  }
 }
