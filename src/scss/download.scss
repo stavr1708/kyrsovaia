@@ -43,3 +43,30 @@
     box-shadow: 4px 4px 30px 0px $_coral;
   }
 }
+@media(max-width:1024px){
+  .download{
+    padding: 80px 0;
+  }
+  .download-title {
+    font-size: $_h4_fz;
+  }
+  .download-desc {
+    font-size: $_h6_fz;
+  }
+  .download-button__link{
+    width: 314px;
+    font-size: $_h5_fz;
+  }
+}
+@media(max-width:320px){
+  .download-title {
+    font-size: $_h5_fz;
+  }
+  .download-desc {
+    font-size: 13px;
+  }
+  .download-button__link{
+    width: 279px;
+    font-size: $_h5_fz;
+  }
+}

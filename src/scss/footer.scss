@@ -7,12 +7,13 @@
 .footer-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 95px;
+  margin: 0px -10px 95px -10px;
 }
-.footer-location {
+.footer-card{
   width: 370px;
+  margin: 0 10px;
 }
-.footer-location__title {
+.footer-card__title{
   font-family: $_ff_raleway;
   font-size: $_h5_fz;
   font-weight: $_fw_700;
@@ -20,48 +21,51 @@
   color: $_white;
   margin-bottom: 29px;
 }
-.footer-location__desc {
+.footer-card__desc{
   font-family: $_ff_raleway;
   font-size: $_h5_fz;
   font-weight: $_fw_400;
   text-align: center;
   color: $_white;
 }
-.footer-share {
-  width: 370px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer-share__title {
-  font-family: $_ff_raleway;
-  font-size: $_h5_fz;
-  font-weight: $_fw_700;
-  text-align: center;
-  color: $_white;
-}
-.footer-share__icons {
+.footer-card__icons{
   display: flex;
   justify-content: center;
+  gap: 26px;
 }
-
-.footer-about {
-  width: 370px;
+.footer-card__icons-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $_grey;
+  width: 39px;
+  height: 39px;
 }
-.footer-about__title {
-  font-family: $_ff_raleway;
-  font-size: $_h5_fz;
-  font-weight: $_fw_700;
-  text-align: center;
-  color: $_white;
-  margin-bottom: 29px;
+.footer-card__icons-wrap__facebook,.footer-card__icons-wrap__twitter,.footer-card__icons-wrap__invision{
+  font-size: $_h4_fz;
+  color: $_grey;
+  transition: 0.7s;
 }
-.footer-about__desc {
-  font-family: $_ff_raleway;
-  font-size: $_h5_fz;
-  font-weight: $_fw_400;
-  text-align: center;
-  color: $_white;
+.footer-card__icons-wrap__facebook{
+  &:hover {
+    color: $_white;
+    background-color: blue;
+    transform: rotate(360deg);
+  }
+}
+.footer-card__icons-wrap__twitter{
+  &:hover {
+    color: rgb(29, 161, 242);
+    background-color: rgb(236, 229, 229);
+    transform: rotate(360deg);
+  }
+}
+.footer-card__icons-wrap__invision{
+  &:hover {
+    color: $_red;
+    background-color: rgb(236, 229, 229);
+    transform: rotate(360deg);
+  }
 }
 .copyright {
   width: 370px;
@@ -83,4 +87,19 @@
       color: aquamarine;
     }
   }
+}
+@media(max-width:1024px){
+  .footer-about{
+    width: 315px;
+  }
+  .footer-share{
+    width: 315px;
+
+  }
+  .footer-location{
+    width: 315px;
+  }
+}
+@media(max-width:320px){
+
 }

@@ -25,3 +25,36 @@ html {
   position: relative;
   z-index: 20;
 }
+@media (max-width: 1024px){
+  .container{
+    max-width: 984px;
+  }
+  .fa-brands{
+    width: 33px;
+  height: 33px;
+  }
+  .fa-facebook-f {
+    font-size: $_h5_fz;
+  }
+  .fa-twitter {
+    font-size: $_h5_fz;
+  }
+  .fa-invision {
+    font-size: $_h5_fz;
+}
+}
+@media(max-width:320px){
+  .fa-brands{
+    width: 39px;
+  height: 39px;
+  }
+  .fa-facebook-f {
+    font-size: $_h4_fz;
+  }
+  .fa-twitter {
+    font-size: $_h4_fz;
+  }
+  .fa-invision {
+    font-size: $_h4_fz;
+}
+}

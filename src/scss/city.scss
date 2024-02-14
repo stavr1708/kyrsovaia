@@ -52,3 +52,24 @@
   font-weight: $_fw_400;
   color: $_white;
 }
+
+@media(max-width:1024px){
+  .city-info__title {
+    font-size: $_h5_fz;
+  }
+  .city-info__desc {
+    font-size: $_h6_fz;
+  }
+}
+
+@media (max-width:320px){
+  .city-img{
+    width: 50%;
+  }
+  .city-info__title {
+    font-size: $_h5_fz;
+  }
+  .city-info__desc {
+    font-size: $_h6_fz;
+  }
+}
