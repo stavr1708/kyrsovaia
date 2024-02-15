@@ -1,5 +1,5 @@
 // console.log("Zdarova");
-new Swiper('.testimonials-slider',{
+new Swiper('.testimonials-container',{
   navigation: {
     prevEl:'.swiper-button-prev',
     nextEl:'.swiper-button-next'
@@ -16,5 +16,21 @@ new Swiper('.testimonials-slider',{
   hashNavigation:{
     watchState:true,
   },
-  autoHeight:true,
+  speed:800,
+  // effect:'fade',
+  // fadeEffect:{
+  //   crossFade:true
+  // },
+  // autoHeight:true,
 });
+const menu = document.querySelector('.header-navigation')
+const menuBtn = document.querySelector('.header-burger')
+
+const body = document.body;
+if(menu && menuBtn){
+  menuBtn.addEventListener('click',() => {
+    menu.classList.toggle('active')
+    menuBtn.classList.toggle('active')
+    body.classList.toggle('lock')
+  })
+}

@@ -17,10 +17,6 @@
 }
 
 .features-card__icons__container {
-  /* icon_1 */
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   width: 100px;
   height: 100px;
   margin: auto auto 40px;
@@ -68,6 +64,10 @@ text-align: center;
   }
 }
 @media (max-width:320px){
+  .features {
+    padding: 38px 0;
+  }
+  
   .features-card__icons__container{
     width: 75px;
     height: 75px;

@@ -59,6 +59,9 @@
   }
 }
 @media(max-width:320px){
+  .download {
+    padding: 40px 0;
+  }
   .download-title {
     font-size: $_h5_fz;
   }
